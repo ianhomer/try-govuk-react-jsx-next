@@ -7,22 +7,16 @@
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "cacheable-response": "^1.1.0",
     "cross-env": "^7.0.2",
     "express": "^4.14.0",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
-    "next": "latest",
+    "next": "^10.0.0",
+    "next-images": "^1.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "file-loader": "^6.2.0",
-    "next-compose-plugins": "^2.2.0",
-    "url-loader": "^4.1.1"
-  }
+  "license": "MIT"
 }
