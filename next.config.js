@@ -1,21 +1,12 @@
-const path = require('path');
+const withPlugins = require('next-compose-plugins');
+const withImages = require('next-images')
+const optimizedImages = require('next-optimized-images');
 
-module.exports = {
-  webpack: (config, options) => {
-    config.module.rules.push({
-      test: /\.(png|ico|svg)$/,
-      include: [
-        path.resolve(__dirname, 'node_modules/govuk-frontend'),
-        path.resolve(__dirname, 'node_modules/govuk-react-jsx')
-      ],
-      use: {
-        loader: 'file-loader',
-        options: {
-          name: "[name].[ext]",
-          outputPath: "images",
-        }
-      }
-    });
-    return config
-  }
-}
+module.exports = withPlugins([
+  //[optimizedImages, {
+  //  inlineImageLimit: 16
+  //}],
+  [withImages, {
+    inlineImageLimit: 16
+  }]
+])

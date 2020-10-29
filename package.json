@@ -12,6 +12,7 @@
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
     "next": "^10.0.0",
+    "next-images": "^1.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^6.1.0",
@@ -19,6 +20,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "file-loader": "^6.2.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.2"
   }
 }
