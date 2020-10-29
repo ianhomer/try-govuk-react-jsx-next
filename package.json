@@ -10,9 +10,13 @@
     "cacheable-response": "^1.1.0",
     "cross-env": "^7.0.2",
     "express": "^4.14.0",
+    "govuk-frontend": "^3.9.1",
+    "govuk-react-jsx": "^4.0.3",
     "next": "latest",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0"
   },
   "license": "MIT"
 }
