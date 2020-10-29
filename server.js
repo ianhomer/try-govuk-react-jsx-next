@@ -33,10 +33,6 @@ app.prepare().then(() => {
 
   server.get('/', (req, res) => ssrCache({ req, res }))
 
-  server.get('/blog/:id', (req, res) => {
-    return ssrCache({ req, res })
-  })
-
   server.get('*', (req, res) => handle(req, res))
 
   server.listen(port, (err) => {
