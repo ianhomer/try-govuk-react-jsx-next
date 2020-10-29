@@ -7,7 +7,6 @@ module.exports = withPlugins([
   //  inlineImageLimit: 16
   //}],
   [withImages, {
-    esModule: true,
-    inlineImageLimit: 16
+    inlineImageLimit: false
   }]
 ])
