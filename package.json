@@ -2,15 +2,13 @@
   "name": "try-next-gds",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
     "express": "^4.14.0",
-    "govuk-frontend": "^3.9.1",
-    "govuk-react-jsx": "^4.0.3",
     "next": "^10.0.0",
     "next-images": "^1.6.2",
     "react": "^16.7.0",
