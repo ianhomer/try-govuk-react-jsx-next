@@ -3,7 +3,6 @@ import {
   Template
 } from 'govuk-react-jsx';
 import { Helmet } from 'react-helmet';
-//import styles from './index.scss';
 
 export default function Home() {
   return (

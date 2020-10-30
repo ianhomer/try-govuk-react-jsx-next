@@ -14,10 +14,10 @@ module.exports = withPlugins([
   //[optimizedImages, {
   //  inlineImageLimit: 16
   //}],
-  [withCSS],
-  [withSass, {
-    cssModules: true
-  }],
+  //[withCSS],
+  //[withSass, {
+  //  cssModules: true
+  //}],
   [withImages, {
     inlineImageLimit: false,
     esModule: false
