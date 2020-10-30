@@ -7,11 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "cross-env": "^7.0.2",
     "express": "^4.14.0",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
     "next": "9.5.5",
+    "node-sass": "^4.14.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^6.1.0",
