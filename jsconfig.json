@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "govuk-frontend/*": "./node_modules/govuk-frontend/*"
+    }
+  }
+}
