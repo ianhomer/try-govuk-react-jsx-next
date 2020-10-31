@@ -2,7 +2,7 @@ import { Template } from "govuk-react-jsx";
 import { Helmet } from "react-helmet";
 
 const headerProps = {
-  serviceName: "try-next-gds",
+  serviceName: "try-govuk-react-jsx-next",
   navigation: [
     {
       children: "Foo",
@@ -19,7 +19,7 @@ export default function Layout({ children }) {
   return (
     <Template header={headerProps}>
       <Helmet>
-        <title>try-next-gds</title>
+        <title>try-govuk-react-jsx-next</title>
       </Helmet>
       {children}
     </Template>
