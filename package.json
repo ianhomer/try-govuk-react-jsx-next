@@ -6,6 +6,7 @@
     "dev": "next",
     "lint": "npx eslint src --ext .js",
     "lint:fix": "npx eslint src --ext .js --fix",
+    "prettier:fix": "npx prettier --write .",
     "start": "next start"
   },
   "dependencies": {
