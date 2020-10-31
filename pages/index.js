@@ -1,18 +1,12 @@
 import {
-  Hint,
-  Template
+  Hint
 } from 'govuk-react-jsx';
-import { Helmet } from 'react-helmet';
+import Layout from './components/layout'
 
 export default function Home() {
   return (
-    <Template>
-      <Helmet>
-        <title>try govuk-react-jsx</title>
-      </Helmet>
-      <Hint>
-        This is a hint
-      </Hint>
-    </Template>
+    <Layout>
+      <Hint>This is a hint</Hint>
+    </Layout>
   )
 }
