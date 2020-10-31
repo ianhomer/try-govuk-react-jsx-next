@@ -245,7 +245,7 @@ export default function Home() {
           children: ["Label text goes here"],
         }}
         name="select-1"
-        value={2}
+        defaultValue={2}
       />
       <SkipLink href="#content">Skip to main content</SkipLink>
       <SummaryList
