@@ -1,4 +1,4 @@
-# Try Next.JS GDS
+# Try govuk-react-jsx-next with Next.JS
 
 Deployed to <https://try-govuk-react-jsx-next.vercel.app>
 
