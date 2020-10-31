@@ -2,8 +2,10 @@
   "name": "try-next-gds",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
+    "lint": "npx eslint src --ext .js",
+    "lint:fix": "npx eslint src --ext .js --fix",
     "start": "next start"
   },
   "dependencies": {
@@ -20,8 +22,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.6.2",
-    "next-transpile-modules": "^4.1.0"
+    "next-transpile-modules": "^4.1.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
   }
 }
