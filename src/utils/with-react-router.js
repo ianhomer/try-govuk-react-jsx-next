@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 const isServer = typeof window === "undefined";
 
 const withReactRouter = (App) => {
@@ -13,6 +12,7 @@ const withReactRouter = (App) => {
           </StaticRouter>
         );
       }
+      const { BrowserRouter } = require("react-router-dom");
       return (
         <BrowserRouter forceRefresh={true}>
           <App {...this.props} />
