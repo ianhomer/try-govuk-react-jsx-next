@@ -9,8 +9,8 @@ const headerProps = {
       to: "/foo",
     },
     {
-      children: "Bar",
-      to: "/bar",
+      children: "Kitchen Sink",
+      to: "/kitchen-sink",
     },
   ],
 };
