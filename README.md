@@ -1,4 +1,4 @@
-# Try govuk-react-jsx-next with Next.JS
+# Try govuk-react-jsx-next with Next.js
 
 Deployed to <https://try-govuk-react-jsx-next.vercel.app>
 
