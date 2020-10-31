@@ -5,7 +5,8 @@ import {
 export default function Home() {
   return (
     <>
-      <Hint>This is a hint</Hint>
+      <Hint>foo</Hint>
     </>
   )
 }
+
