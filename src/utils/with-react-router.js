@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 const isServer = typeof window === "undefined";
 
-export default (App) => {
+const withReactRouter = (App) => {
   return class AppWithReactRouter extends React.Component {
     render() {
       if (isServer) {
@@ -21,3 +21,5 @@ export default (App) => {
     }
   };
 };
+
+export default withReactRouter;
