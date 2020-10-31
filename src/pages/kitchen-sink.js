@@ -222,7 +222,6 @@ export default function Home() {
           },
         ]}
         name="example"
-        value="no"
       />
       <Select
         id="select-1"

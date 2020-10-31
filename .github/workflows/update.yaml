@@ -1,0 +1,37 @@
+name: update
+
+on:
+  schedule: 
+    - cron: 0 0 * * 1
+
+jobs:
+  update:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run update
+        npm install
+        npm run build
+      env:
+        CI: false
+    - name: commit update
+      run: |
+        if ! git diff --quiet --exit-code ; then
+          git config --local user.email "auto@purplepip.com"
+          git config --local user.name "Purple Pip Robot"
+          git commit -am "Auto-update"
+          git push
+        fi

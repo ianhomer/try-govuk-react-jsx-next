@@ -7,14 +7,15 @@
     "lint": "npx eslint src --ext .js",
     "lint:fix": "npx eslint src --ext .js --fix",
     "prettier:fix": "npx prettier --write .",
-    "start": "next start"
+    "start": "next start",
+    "update": "npx npm-check-updates -u"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
     "express": "^4.14.0",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
-    "next": "9.5.5",
+    "next": "^10.0.0",
     "node-sass": "^4.14.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
