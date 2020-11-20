@@ -12,8 +12,7 @@
     "prettier:fix": "npx prettier --write .",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.13.0",
