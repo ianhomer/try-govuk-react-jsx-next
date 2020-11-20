@@ -19,6 +19,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
+          npm run bootstrap
           npm run build
         env:
           CI: true

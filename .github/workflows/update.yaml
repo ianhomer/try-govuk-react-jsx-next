@@ -25,6 +25,7 @@ jobs:
           npm install
           npm run update
           npm install
+          npm run bootstrap
           npm run build
         env:
           CI: false

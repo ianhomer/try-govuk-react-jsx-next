@@ -1,36 +1,40 @@
 {
-  "name": "try-next-gds",
+  "name": "@try-govuk-react-jsx-next/root",
   "version": "0.0.1",
   "scripts": {
-    "build": "next build",
-    "dev": "next",
-    "lint": "npx eslint src --ext .js",
-    "lint:fix": "npx eslint src --ext .js --fix",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "clean": "lerna clean --yes",
+    "eslint": "lerna run lint",
+    "eslint:fix": "lerna run lint:fix",
+    "format:pkg": "format-package -w",
+    "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "start": "next start",
-    "update": "npx npm-check-updates -u"
+    "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
   "dependencies": {
-    "cross-env": "^7.0.2",
-    "express": "^4.17.1",
-    "govuk-frontend": "^3.9.1",
-    "govuk-react-jsx": "^4.0.3",
-    "next": "^10.0.1",
-    "node-sass": "4.14.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^5.2.0"
   },
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.7.0",
-    "@typescript-eslint/parser": "^4.7.0",
     "eslint": "^7.13.0",
-    "next-compose-plugins": "^2.2.1",
-    "next-images": "^1.6.2",
-    "next-transpile-modules": "^4.1.0",
+    "eslint-config-prettier": "^6.15.0",
+    "format-package": "^6.1.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.1",
+    "npm-check-updates": "^10.1.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.5"
+    "rimraf": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run eslint",
+      "pre-commit": "lint-staged --quiet"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": "prettier --write"
   }
 }
