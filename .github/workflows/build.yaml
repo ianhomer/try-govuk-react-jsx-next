@@ -35,5 +35,6 @@ jobs:
           npm test
           npm run e2e:smoke
           npm run e2e:dev:smoke
+          npm run build:storybook
         env:
           CI: true
