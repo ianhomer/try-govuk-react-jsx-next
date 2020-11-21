@@ -6,6 +6,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream --no-prefix",
     "clean": "lerna clean --yes",
+    "dev:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run dev",
     "eslint": "lerna run eslint --stream --no-prefix",
     "eslint:debug": "lerna run eslint:debug --stream --no-prefix",
     "eslint:fix": "lerna run lint:fix",
