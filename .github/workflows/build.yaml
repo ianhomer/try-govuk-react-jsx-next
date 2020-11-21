@@ -1,6 +1,12 @@
 name: build
 
-on: [push, workflow_dispatch]
+on:
+  push:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["update"]
+    types:
+      - completed
 
 jobs:
   build:
@@ -21,7 +27,7 @@ jobs:
           npm install
           npm run bootstrap
           npm run lint
-          npm run test
+          npm test
           npm run build
         env:
           CI: true

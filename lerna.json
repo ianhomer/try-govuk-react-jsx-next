@@ -1,6 +1,6 @@
 {
   "ignoreChanges": ["**/*.md"],
-  "loglevel": "success",
+  "loglevel": "info",
   "packages": [
     "packages/*", 
     "services/*"

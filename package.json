@@ -4,17 +4,17 @@
   "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
+    "build": "lerna run build --stream --no-prefix",
     "clean": "lerna clean --yes",
     "format:pkg": "format-package -w",
     "lint": "npm run eslint",
     "lint:fix": "npm rm eslint:fix",
-    "eslint": "lerna run lint",
+    "eslint": "lerna run lint --stream",
     "eslint:fix": "lerna run lint:fix",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
-    "test": "lerna run test",
+    "test": "lerna run test --stream --no-prefix",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
   "husky": {
@@ -34,7 +34,6 @@
     "eslint-config-prettier": "^6.15.0",
     "format-package": "^6.1.0",
     "husky": "^4.3.0",
-    "jest": "^26.6.3",
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.1",
     "npm-check-updates": "^10.1.1",

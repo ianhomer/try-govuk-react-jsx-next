@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Foo from "./foo";
+import Foo from "../../src/pages/foo";
 
 it("renders OK", () => {
   const { children } = renderer.create(<Foo />).toJSON();
