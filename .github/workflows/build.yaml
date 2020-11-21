@@ -22,16 +22,18 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      # Test before build tests with typescript transpiling
+      # Test before build so we run with typescript transpiling
       # Test after build uses compiled JS in package dist folders
       - name: npm install, build, and test
         run: |
           npm install
           npm run bootstrap
           npm run lint
+          npm e2e:dev:smoke
           npm test
           npm run build
           npm test
           npm run e2e:smoke
+          npm e2e:dev:smoke
         env:
           CI: true
