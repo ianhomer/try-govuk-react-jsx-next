@@ -1,21 +1,34 @@
 {
   "name": "@try-govuk-react-jsx-next/root",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean --yes",
-    "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix",
     "format:pkg": "format-package -w",
+    "lint": "npm run eslint",
+    "lint:fix": "npm rm eslint:fix",
+    "eslint": "lerna run lint",
+    "eslint:fix": "lerna run lint:fix",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --quiet",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "prettier --write"
+  },
   "dependencies": {},
-  "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "format-package": "^6.1.0",
@@ -26,15 +39,7 @@
     "npm-check-updates": "^10.1.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
-    "rimraf": "^3.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint",
-      "pre-commit": "lint-staged --quiet"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": "prettier --write"
+    "rimraf": "^3.0,.2",
+    "typescript": "^4.1.2"
   }
 }
