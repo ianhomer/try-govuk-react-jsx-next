@@ -1,10 +1,11 @@
 {
   "name": "@try-govuk-react-jsx-next/root",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream --no-prefix",
+    "build-storybook": "npm --prefix packages/ui-components run build-storybook",
     "clean": "lerna clean --yes",
     "dev:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run dev",
     "e2e:smoke": "start-server-and-test start http://localhost:3000 e2e:smoke:test",
@@ -20,6 +21,7 @@
     "prettier:fix": "npx prettier --write .",
     "start": "run-p start:govuk-react-jsx-next",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
+    "storybook": "npm --prefix packages/ui-components run storybook",
     "test": "lerna run test --stream --no-prefix",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
@@ -34,8 +36,14 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/react": "^6.1.2",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
+    "babel-loader": "^8.2.1",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "format-package": "^6.1.0",
