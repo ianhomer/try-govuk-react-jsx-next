@@ -5,9 +5,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "lint": "npx eslint src --ext .ts --ext .tsx",
-    "lint:fix": "npx eslint src --ext .ts --ext .tsx --fix",
-    "prettier:fix": "npx prettier --write .",
+    "eslint": "npx eslint src --ext .ts,.tsx",
+    "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
+    "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",
     "start": "next start",
     "test": "jest",
     "update": "npx npm-check-updates -u"
