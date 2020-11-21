@@ -13,19 +13,19 @@
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "react-test-renderer": "^17.0.1",
     "babel-jest": "^26.6.3",
     "cross-env": "^7.0.2",
-    "jest": "^26.6.3",
     "express": "^4.17.1",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
+    "jest": "^26.6.3",
     "next": "^10.0.1",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^17.0.1"
   },
   "devDependencies": {
     "@types/react": "^16.14.0",
