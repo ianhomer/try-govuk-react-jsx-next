@@ -1,5 +1,3 @@
 {
-  "reject": [
-    "node-sass"
-  ]
+  "reject": ["node-sass"]
 }
