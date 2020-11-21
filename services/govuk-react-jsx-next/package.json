@@ -9,9 +9,12 @@
     "lint:fix": "npx eslint src --ext .ts --ext .tsx --fix",
     "prettier:fix": "npx prettier --write .",
     "start": "next start",
+    "test": "jest",
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
+    "react-test-renderer": "^17.0.1",
+    "babel-jest": "^26.6.3",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "govuk-frontend": "^3.9.1",

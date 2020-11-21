@@ -1,6 +1,6 @@
 import { Hint } from "govuk-react-jsx";
 
-export default function Home() {
+export default function Foo() {
   return (
     <>
       <Hint>foo</Hint>

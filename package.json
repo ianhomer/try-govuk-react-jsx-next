@@ -14,6 +14,7 @@
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
+    "test": "lerna run test",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
   "husky": {
@@ -39,7 +40,7 @@
     "npm-check-updates": "^10.1.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
-    "rimraf": "^3.0,.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.1.2"
   }
 }

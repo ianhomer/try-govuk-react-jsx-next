@@ -18,6 +18,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off"
   },
   env: {
+    jest: true,
     node: true,
   },
 };
