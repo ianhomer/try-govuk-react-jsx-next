@@ -5,11 +5,12 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean --yes",
-    "eslint": "lerna run lint",
-    "eslint:fix": "lerna run lint:fix",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
     "format:pkg": "format-package -w",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
+    "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
   "dependencies": {},
@@ -29,11 +30,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run eslint",
+      "pre-push": "npm run lint",
       "pre-commit": "lint-staged --quiet"
     }
   },
   "lint-staged": {
-    "*.{js,ts}": "prettier --write"
+    "*.{ts,tsx}": "prettier --write"
   }
 }

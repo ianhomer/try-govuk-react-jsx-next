@@ -15,7 +15,7 @@ const headerProps = {
   ],
 };
 
-export default function Layout({ children }) {
+export default function Layout({ children }: any): JSX.Element {
   return (
     <Template header={headerProps}>
       <Helmet>

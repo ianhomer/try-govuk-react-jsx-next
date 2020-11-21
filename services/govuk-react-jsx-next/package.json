@@ -4,8 +4,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "lint": "npx eslint src --ext .js",
-    "lint:fix": "npx eslint src --ext .js --fix",
+    "lint": "npx eslint src --ext .ts --ext .tsx",
+    "lint:fix": "npx eslint src --ext .ts --ext .tsx --fix",
     "prettier:fix": "npx prettier --write .",
     "start": "next start",
     "update": "npx npm-check-updates -u"
