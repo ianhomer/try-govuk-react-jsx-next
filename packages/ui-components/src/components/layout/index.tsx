@@ -2,7 +2,7 @@ import { Template } from "govuk-react-jsx";
 import { Helmet } from "react-helmet";
 
 const headerProps = {
-  serviceName: "try-govuk-react-jsx-next",
+  serviceName: "ui-components",
   navigation: [
     {
       children: "Foo",
