@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
+    "clean": "rimraf dist storybook-static",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   },

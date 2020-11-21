@@ -4,6 +4,7 @@
   "license": "ISC",
   "scripts": {
     "build": "next build",
+    "clean": "rimraf .next",
     "dev": "next",
     "eslint": "npx eslint src --ext .ts,.tsx",
     "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
