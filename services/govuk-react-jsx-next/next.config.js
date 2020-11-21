@@ -6,13 +6,23 @@ const withTranspileModules = require("next-transpile-modules")([
   "govuk-react-jsx",
 ]);
 
-module.exports = withPlugins([
+module.exports = withPlugins(
   [
-    withImages,
-    {
-      inlineImageLimit: false,
-      esModule: false,
-    },
+    [
+      withImages,
+      {
+        inlineImageLimit: false,
+        esModule: false,
+      },
+    ],
+    [withTranspileModules],
   ],
-  [withTranspileModules],
-]);
+  {
+    webpack: (config) => {
+      config.resolve.alias["govuk-react-jsx"] = require.resolve(
+        "govuk-react-jsx"
+      );
+      return config;
+    },
+  }
+);
