@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
-    "next": "^10.0.1",
+    "next": "^10.0.2",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
-    "@types/react": "^16.14.0",
+    "@types/react": "^17.0.0",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",
     "next-transpile-modules": "^4.1.0"
