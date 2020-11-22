@@ -17,6 +17,8 @@ module.exports = {
   moduleNameMapper: {
     "\\.(ico|png|svg|)$": "<rootDir>/config/jest/mocks.js",
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+    // react should be resolved from the local node_modules and never
+    // from the ui-components node_modules
     "^react$": "<rootDir>/node_modules/react",
     "^react/(.*)$": "<rootDir>/node_modules/react/$1",
   },
