@@ -31,10 +31,11 @@ jobs:
           npm run lint
           npm run e2e:dev:smoke
           npm test
+          npm run build:storybook
+          npm run clean:react
           npm run build
           npm test
           npm run e2e:smoke
           npm run e2e:dev:smoke
-          npm run build:storybook
         env:
           CI: true

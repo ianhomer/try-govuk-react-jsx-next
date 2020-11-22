@@ -8,6 +8,7 @@
     "build:storybook": "npm --prefix packages/ui-components run build:storybook",
     "clean": "lerna run clean",
     "clean:lerna": "lerna clean --yes",
+    "clean:react": "rimraf packages/ui-components/node_modules/{react,react-dom}",
     "dev:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run dev",
     "e2e:smoke": "start-server-and-test start http://localhost:3000 e2e:smoke:test",
     "e2e:dev:smoke": "start-server-and-test dev:govuk-react-jsx-next http://localhost:3000 e2e:smoke:test",
