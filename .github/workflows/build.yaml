@@ -31,6 +31,7 @@ jobs:
           npm install
           npm run bootstrap
           npm run lint
+          npm run clean:react
           npm run e2e:dev:smoke
           npm run bootstrap
           npm run build:ui-components
