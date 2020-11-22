@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       # Test before build so we run with typescript transpiling
+      # Test after clean:react make sure OK in that state too
       # Test after build uses compiled JS in package dist folders
       - name: npm install, build, and test
           npm run build:storybook
@@ -31,10 +32,13 @@ jobs:
           npm install
           npm run bootstrap
           npm run lint
+          npm test
           npm run clean:react
           npm run e2e:dev:smoke
+          npm test
           npm run bootstrap
           npm run build:ui-components
+          npm test
           npm run build:storybook
           npm run clean:react
           npm run e2e:dev:smoke

@@ -17,5 +17,7 @@ module.exports = {
   moduleNameMapper: {
     "\\.(ico|png|svg|)$": "<rootDir>/config/jest/mocks.js",
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+    "^react$": "<rootDir>/node_modules/react",
+    "^react/(.*)$": "<rootDir>/node_modules/react/$1",
   },
 };
