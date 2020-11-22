@@ -8,6 +8,7 @@ on:
     types:
       - completed
 
+        npm run build:storybook
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,16 +26,18 @@ jobs:
       # Test before build so we run with typescript transpiling
       # Test after build uses compiled JS in package dist folders
       - name: npm install, build, and test
+          npm run build:storybook
         run: |
           npm install
           npm run bootstrap
           npm run lint
           npm run e2e:dev:smoke
-          npm test
+          npm run bootstrap
+          npm run build:ui-components
           npm run build:storybook
           npm run clean:react
-          npm run build
-          npm test
+          npm run e2e:dev:smoke
+          npm run build:govuk-react-jsx-next
           npm run e2e:smoke
           npm run e2e:dev:smoke
         env:
