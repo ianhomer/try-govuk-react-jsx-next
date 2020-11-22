@@ -12,6 +12,7 @@ const withTranspileModules = require("next-transpile-modules")(
   }
 );
 const { DuplicatesPlugin } = require("inspectpack/plugin");
+const { IgnorePlugin } = require("webpack");
 
 module.exports = withPlugins(
   [
@@ -32,6 +33,31 @@ module.exports = withPlugins(
           verbose: false,
         })
       );
+
+      //config.plugins.push(
+      //  new IgnorePlugin({
+      //    checkResource (resource) {
+      //      if (!resource) {
+      //        return false;
+      //      }
+      //      if ("string" != typeof resource) {
+      //        return false
+      //      }
+      //      //console.log(resource);
+      //      if (resource.includes("ui-components")) {
+      //        console.log(resource);
+      //        console.log("XX");
+      //        return false;
+      //      }
+      //      return false
+      //   }
+      //  })
+      //);
+      //config.plugins.push(
+      //  new IgnorePlugin({
+      //    resourceRegExp: /.*ui-components.node_modules.*/
+      //  })
+      //);
 
       //config.externals.push("react");
 
