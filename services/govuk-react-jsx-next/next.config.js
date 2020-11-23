@@ -12,9 +12,9 @@ const withTranspileModules = require("next-transpile-modules")(
   }
 );
 const { DuplicatesPlugin } = require("inspectpack/plugin");
-const { IgnorePlugin } = require("webpack");
+//const { IgnorePlugin } = require("webpack");
 
-const nextConfig = withPlugins(
+module.exports = withPlugins(
   [
     [
       withImages,
@@ -62,9 +62,9 @@ const nextConfig = withPlugins(
       //config.externals.push("react");
 
       //config.resolve.symlinks = false;
-      //config.resolve.alias["govuk-react-jsx"] = require.resolve(
-      //  "govuk-react-jsx"
-      //);
+      config.resolve.alias["govuk-react-jsx"] = require.resolve(
+        "govuk-react-jsx"
+      );
       //config.resolve.alias["govuk-frontend"] = require.resolve(
       //  "govuk-frontend"
       //);
@@ -86,10 +86,7 @@ const nextConfig = withPlugins(
       //config.resolve.alias["react-helmet"] = path.resolve(__dirname, '.', 'node_modules', "react-helmet");
       //config.resolve.alias["@babel/runtime"] = path.resolve(__dirname, '../..', 'node_modules', "@babel/runtime");
       //config.resolve.alias["regenerator-runtime"] = path.resolve(__dirname, '../..', 'node_modules', "regenerator-runtime");
-      console.log(config.resolve.modules);
       return config;
     },
   }
 );
-
-module.exports = nextConfig;

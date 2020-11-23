@@ -5,6 +5,7 @@ Deployed to <https://try-govuk-react-jsx-next.vercel.app>
 ## tl;dr
 
     npm install
+    npm run prune:ui-components-react
     npm run dev
 
 And access page
