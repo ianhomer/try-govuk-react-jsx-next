@@ -8,13 +8,13 @@ const withTranspileModules = require("next-transpile-modules")(
     "govuk-react-jsx",
   ],
   {
-    resolveSymlinks: false,
+    //resolveSymlinks: false,
   }
 );
 const { DuplicatesPlugin } = require("inspectpack/plugin");
 const { IgnorePlugin } = require("webpack");
 
-module.exports = withPlugins(
+const nextConfig = withPlugins(
   [
     [
       withImages,
@@ -62,9 +62,15 @@ module.exports = withPlugins(
       //config.externals.push("react");
 
       //config.resolve.symlinks = false;
-      config.resolve.alias["govuk-react-jsx"] = require.resolve(
-        "govuk-react-jsx"
-      );
+      //config.resolve.alias["govuk-react-jsx"] = require.resolve(
+      //  "govuk-react-jsx"
+      //);
+      //config.resolve.alias["govuk-frontend"] = require.resolve(
+      //  "govuk-frontend"
+      //);
+      //config.resolve.alias["@try-govuk-react-jsx-next/ui-components"] = require.resolve(
+      //  "@try-govuk-react-jsx-next/ui-components"
+      //);
 
       //config.resolve.alias["@try-govuk-react-jsx-next/ui-components"] = path.resolve(__dirname, '../..', 'packages', "ui-components");
       //require.resolve(
@@ -80,8 +86,10 @@ module.exports = withPlugins(
       //config.resolve.alias["react-helmet"] = path.resolve(__dirname, '.', 'node_modules', "react-helmet");
       //config.resolve.alias["@babel/runtime"] = path.resolve(__dirname, '../..', 'node_modules', "@babel/runtime");
       //config.resolve.alias["regenerator-runtime"] = path.resolve(__dirname, '../..', 'node_modules', "regenerator-runtime");
-
+      console.log(config.resolve.modules);
       return config;
     },
   }
 );
+
+module.exports = nextConfig;
