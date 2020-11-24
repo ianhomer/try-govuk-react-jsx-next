@@ -1,5 +1,5 @@
 {
-  "name": "@try-govuk-react-jsx-next/ui-wrapper",
+  "name": "@try-govuk-react-jsx-next/ui-components-wrapper",
   "version": "0.0.1",
   "license": "ISC",
   "devDependencies": {
