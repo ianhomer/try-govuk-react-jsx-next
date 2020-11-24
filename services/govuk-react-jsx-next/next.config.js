@@ -11,7 +11,7 @@ const withTranspileModules = require("next-transpile-modules")(
     //resolveSymlinks: false,
   }
 );
-const { DuplicatesPlugin } = require("inspectpack/plugin");
+//const { DuplicatesPlugin } = require("inspectpack/plugin");
 //const { IgnorePlugin } = require("webpack");
 
 module.exports = withPlugins(
