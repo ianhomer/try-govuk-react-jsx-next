@@ -6,6 +6,7 @@
     "build": "next build",
     "clean": "rimraf .next",
     "dev": "next",
+    "export": "next export",
     "eslint": "npx eslint src --ext .ts,.tsx",
     "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
     "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",

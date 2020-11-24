@@ -1,6 +1,7 @@
 .next/
 dist/
 node_modules/
+out/
 public/
 storybook-static/
 
