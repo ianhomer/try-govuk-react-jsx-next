@@ -33,14 +33,12 @@ jobs:
           npm run bootstrap
           npm run lint
           npm test
-          npm run prune:ui-components-react
           npm run e2e:dev:smoke
           npm test
           npm run bootstrap
           npm run build:ui-components
           npm test
           npm run build:storybook
-          npm run prune:ui-components-react
           npm run e2e:dev:smoke
           npm run build:govuk-react-jsx-next
           npm run e2e:smoke
