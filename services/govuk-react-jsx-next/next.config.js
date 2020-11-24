@@ -60,6 +60,11 @@ module.exports = withPlugins(
       //);
 
       //config.externals.push("react");
+      //
+      //config.module.rules.push({
+      //  test: /ui-components\/node_modules\/react/,
+      //  use: 'null-loader',
+      //});
 
       //config.resolve.symlinks = false;
       config.resolve.alias["govuk-react-jsx"] = require.resolve(
@@ -79,9 +84,10 @@ module.exports = withPlugins(
       // Address duplications raised by duplicates plugin
       //config.resolve.alias["prop-types"] = require.resolve("prop-types");
       //config.resolve.alias["next"] = path.resolve(__dirname, '.', 'node_modules', "next");
-      //config.resolve.alias["react"] = require.resolve("react");
+      //config.resolve.alias["./node_modules/ui-components/node_modules/react"] = false;
+      config.resolve.alias["react"] = require.resolve("react");
       //config.resolve.alias["react"] = path.resolve(__dirname, '.', 'node_modules', "react");
-      //config.resolve.alias["react-dom"] = require.resolve("react-dom");
+      config.resolve.alias["react-dom"] = require.resolve("react-dom");
       //config.resolve.alias["react-dom"] = path.resolve(__dirname, '.', 'node_modules', "react-dom");
       //config.resolve.alias["react-helmet"] = path.resolve(__dirname, '.', 'node_modules', "react-helmet");
       //config.resolve.alias["@babel/runtime"] = path.resolve(__dirname, '../..', 'node_modules', "@babel/runtime");
