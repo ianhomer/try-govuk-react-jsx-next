@@ -7,7 +7,7 @@
     "build": "lerna run build --stream --no-prefix",
     "build:ui-components": "npm --prefix packages/ui-wrapper/ui-components run build",
     "build:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next run build",
-    "build:storybook": "npm --prefix packages/ui-components run build:storybook",
+    "build:storybook": "npm --prefix packages/ui-wrapper/ui-components run build:storybook",
     "clean": "lerna run clean",
     "clean:lerna": "lerna clean --yes",
     "dev:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run dev",
