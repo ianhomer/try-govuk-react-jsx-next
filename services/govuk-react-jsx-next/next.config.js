@@ -26,6 +26,7 @@ module.exports = withPlugins(
     [withTranspileModules],
   ],
   {
+    trailingSlash: true,
     webpack: (config) => {
       //config.plugins.push(
       //  new DuplicatesPlugin({
