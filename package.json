@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream --no-prefix",
-    "build:ui-components": "npm --prefix packages/ui-components run build",
+    "build:ui-components": "npm --prefix packages/ui-wrapper/ui-components run build",
     "build:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next run build",
     "build:storybook": "npm --prefix packages/ui-components run build:storybook",
     "clean": "lerna run clean",
@@ -23,10 +23,10 @@
     "postinstall": "lerna bootstrap",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "prune:ui-components-react": "rimraf packages/ui-components/node_modules/{react,react-dom}",
+    "prune:ui-components-react": "rimraf packages/ui-wrapper/ui-components/node_modules/{react,react-dom}",
     "start": "run-p start:govuk-react-jsx-next",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
-    "storybook": "npm --prefix packages/ui-components run storybook",
+    "storybook": "npm --prefix packages/ui-wrapper/ui-components run storybook",
     "test": "lerna run test --stream --no-prefix",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
