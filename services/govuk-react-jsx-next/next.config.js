@@ -27,12 +27,12 @@ module.exports = withPlugins(
   ],
   {
     webpack: (config) => {
-      config.plugins.push(
-        new DuplicatesPlugin({
-          emitErrors: false,
-          verbose: false,
-        })
-      );
+      //config.plugins.push(
+      //  new DuplicatesPlugin({
+      //    emitErrors: false,
+      //    verbose: false,
+      //  })
+      //);
 
       //config.plugins.push(
       //  new IgnorePlugin({
