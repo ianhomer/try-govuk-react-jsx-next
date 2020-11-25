@@ -174,19 +174,19 @@ export default function Home() {
       <Input
         id="input-example"
         label={{
-          children: ["National Insurance number"],
+          children: ["A number"],
         }}
         name="test-name"
         type="text"
       />
       <InsetText>
-        It can take up to 8 weeks to register a lasting power of attorney if
-        there are no mistakes in the application.
+        It can take up to 8 weeks to register if there are no mistakes in the
+        application.
       </InsetText>
 
-      <Label>National Insurance number</Label>
+      <Label>A number</Label>
       <Panel titleChildren="Application complete">
-        Your reference number: HDJ2123F
+        Your reference number: AA111111A
       </Panel>
       <PhaseBanner
         tag={{
