@@ -1,3 +1,7 @@
 $govuk-assets-path: "~govuk-frontend/govuk/assets/";
 $govuk-font-family: "Helvetica", "Arial", sans-serif;
 @import "~govuk-frontend/govuk/all";
+
+.govuk-footer__copyright-logo, .govuk-header__logotype {
+  visibility: hidden;
+}

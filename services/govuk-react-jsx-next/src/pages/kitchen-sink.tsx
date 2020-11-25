@@ -147,7 +147,7 @@ export default function Home() {
       <ErrorSummary
         errorList={[
           {
-            children: ["The date your passport was issued must be in the past"],
+            children: ["The date was issued must be in the past"],
             href: "#example-error-1",
           },
           {
@@ -227,15 +227,15 @@ export default function Home() {
         id="select-1"
         items={[
           {
-            children: ["GOV.UK frontend option 1"],
+            children: ["frontend option 1"],
             value: 1,
           },
           {
-            children: ["GOV.UK frontend option 2"],
+            children: ["frontend option 2"],
             value: 2,
           },
           {
-            children: ["GOV.UK frontend option 3"],
+            children: ["frontend option 3"],
             disabled: true,
             value: 3,
           },
@@ -392,17 +392,17 @@ export default function Home() {
                   </thead>
                   <tbody className="govuk-table__body">
                     <tr className="govuk-table__row">
-                      <td className="govuk-table__cell">David Francis</td>
+                      <td className="govuk-table__cell">Bob Francis</td>
                       <td className="govuk-table__cell">3</td>
                       <td className="govuk-table__cell">0</td>
                     </tr>
                     <tr className="govuk-table__row">
-                      <td className="govuk-table__cell">Paul Farmer</td>
+                      <td className="govuk-table__cell">Michael Farmer</td>
                       <td className="govuk-table__cell">1</td>
                       <td className="govuk-table__cell">0</td>
                     </tr>
                     <tr className="govuk-table__row">
-                      <td className="govuk-table__cell">Rita Patel</td>
+                      <td className="govuk-table__cell">Mary Patel</td>
                       <td className="govuk-table__cell">2</td>
                       <td className="govuk-table__cell">0</td>
                     </tr>
@@ -557,7 +557,7 @@ export default function Home() {
         name="more-detail"
       />
       <WarningText iconFallbackText="Warning">
-        You can be fined up to £5,000 if you don’t register.
+        This is a example warning text.
       </WarningText>
     </>
   );

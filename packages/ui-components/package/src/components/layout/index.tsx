@@ -1,5 +1,5 @@
 import React from "react";
-import { Template } from "govuk-react-jsx";
+import { Template, WarningText } from "govuk-react-jsx";
 import { Helmet } from "react-helmet";
 
 const headerProps = {
@@ -22,6 +22,7 @@ function Layout({ children }: any): JSX.Element {
       <Helmet>
         <title>ui-components</title>
       </Helmet>
+      <WarningText iconFallbackText="Warning">THIS IS A TEST SITE</WarningText>
       {children}
     </Template>
   );
