@@ -1,7 +1,7 @@
 import React from "react";
 const isServer = typeof window === "undefined";
 
-const withReactRouter = (App) => {
+const withReactRouter = (App: any) => {
   return class AppWithReactRouter extends React.Component<any, any> {
     render() {
       if (isServer) {

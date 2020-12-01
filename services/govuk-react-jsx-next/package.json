@@ -33,6 +33,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
     "@types/react": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
     "inspectpack": "^4.5.2",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",
