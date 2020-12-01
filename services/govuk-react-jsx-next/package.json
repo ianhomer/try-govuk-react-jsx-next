@@ -34,6 +34,8 @@
     "@babel/preset-typescript": "^7.12.7",
     "@types/react": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "inspectpack": "^4.5.2",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",
