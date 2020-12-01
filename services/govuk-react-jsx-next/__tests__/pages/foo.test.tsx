@@ -9,7 +9,7 @@ it("renders OK", () => {
   expect(nodes[1].children[0]).toBe("bar");
 });
 
-//it("mounts OK", () => {
-//  const wrapper = mount(<Foo />);
-//  expect(wrapper.find("Bar").text()).toBe("bar");
-//});
+it("mounts OK", () => {
+  const wrapper = mount(<Foo />);
+  expect(wrapper.find("Bar").text()).toBe("bar");
+});
