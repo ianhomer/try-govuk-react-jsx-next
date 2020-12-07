@@ -1,4 +1,3 @@
-import React from "react";
 import { Template, WarningText } from "govuk-react-jsx";
 import { Helmet } from "react-helmet";
 
