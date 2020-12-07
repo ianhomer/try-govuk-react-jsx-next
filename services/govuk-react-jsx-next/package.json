@@ -11,7 +11,7 @@
     "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",
     "export": "next export",
     "start": "next start",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
