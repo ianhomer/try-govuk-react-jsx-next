@@ -5,3 +5,5 @@ out/
 public/
 storybook-static/
 
+*.log
+

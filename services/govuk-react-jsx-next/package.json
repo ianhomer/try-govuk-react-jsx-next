@@ -7,27 +7,27 @@
     "clean": "rimraf .next",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next",
-    "export": "next export",
     "eslint": "npx eslint src --ext .ts,.tsx",
     "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
     "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",
+    "export": "next export",
     "start": "next start",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:debug": "node --inspect-brk ../../node_modules/.bin/jest --runInBand",
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
     "@try-govuk-react-jsx-next/ui-components": "^0.0.1",
     "babel-jest": "^26.6.3",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
-    "govuk-frontend": "^3.9.1",
+    "govuk-frontend": "^3.10.1",
     "govuk-react-jsx": "^4.0.3",
-    "next": "^10.0.2",
+    "next": "^10.0.3",
     "node-sass": "4.14.1",
     "null-loader": "^4.0.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-test-renderer": "^17.0.1"
@@ -35,9 +35,13 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
     "@types/react": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "inspectpack": "^4.5.2",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",
-    "next-transpile-modules": "^4.1.0"
+    "next-transpile-modules": "^6.0.0"
   }
 }

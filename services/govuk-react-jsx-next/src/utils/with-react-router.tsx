@@ -1,8 +1,8 @@
 import React from "react";
 const isServer = typeof window === "undefined";
 
-const withReactRouter = (App) => {
-  return class AppWithReactRouter extends React.Component<any, any> {
+const withReactRouter = (App: any) => {
+  return class extends React.Component<any, any> {
     render() {
       if (isServer) {
         const { StaticRouter } = require("react-router");
