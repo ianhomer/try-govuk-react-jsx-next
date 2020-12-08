@@ -5,6 +5,7 @@
   "scripts": {
     "build": "next build",
     "clean": "rimraf .next",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next",
     "export": "next export",
     "eslint": "npx eslint src --ext .ts,.tsx",
@@ -12,6 +13,7 @@
     "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",
     "start": "next start",
     "test": "jest",
+    "test:debug": "node --inspect-brk ../../node_modules/.bin/jest --runInBand",
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {

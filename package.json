@@ -11,6 +11,7 @@
     "build-and-export": "run-s build:govuk-react-jsx-next export:govuk-react-jsx-next",
     "clean": "lerna run clean",
     "clean:lerna": "lerna clean --yes",
+    "debug": "npm --prefix services/govuk-react-jsx-next/ run debug",
     "dev:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run dev",
     "e2e:smoke": "WAIT_ON_TIMEOUT=60000 start-server-and-test start http://localhost:3000 e2e:smoke:test",
     "e2e:dev:smoke": "WAIT_ON_TIMEOUT=60000 start-server-and-test dev:govuk-react-jsx-next http://localhost:3000 e2e:smoke:test",
