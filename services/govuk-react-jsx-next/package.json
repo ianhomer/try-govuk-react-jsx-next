@@ -13,8 +13,7 @@
     "eslint:fix": "npx eslint src --ext .ts,.tsx --fix",
     "export": "next export",
     "start": "next start",
-    "test": "../../node_modules/.bin/jest",
-    "test:experimental": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:debug": "node --inspect-brk ../../node_modules/.bin/jest --runInBand",
     "update": "npx npm-check-updates -u"
   },
