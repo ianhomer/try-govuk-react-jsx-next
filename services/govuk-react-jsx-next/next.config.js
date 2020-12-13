@@ -11,7 +11,7 @@ const withTranspileModules = require("next-transpile-modules")(
     //resolveSymlinks: false,
   }
 );
-const TerserPlugin = require("terser-webpack-plugin");
+//const TerserPlugin = require("terser-webpack-plugin");
 //const { DuplicatesPlugin } = require("inspectpack/plugin");
 //const { IgnorePlugin } = require("webpack");
 
@@ -34,11 +34,11 @@ module.exports = withPlugins(
       );
       config.optimization = {
         minimize: true,
-        minimizer: [
-          new TerserPlugin({
-            extractComments: true,
-          }),
-        ],
+        //minimizer: [
+        //  new TerserPlugin({
+        //    extractComments: true,
+        //  }),
+        //],
       };
       return config;
     },
