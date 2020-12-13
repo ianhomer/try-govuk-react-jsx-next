@@ -11,6 +11,7 @@ const withTranspileModules = require("next-transpile-modules")(
     //resolveSymlinks: false,
   }
 );
+const TerserPlugin = require("terser-webpack-plugin");
 //const { DuplicatesPlugin } = require("inspectpack/plugin");
 //const { IgnorePlugin } = require("webpack");
 
@@ -31,7 +32,14 @@ module.exports = withPlugins(
       config.resolve.alias["govuk-react-jsx"] = require.resolve(
         "govuk-react-jsx"
       );
-      config.optimization.minimize = true;
+      config.optimization = {
+        minimize: true,
+        minimizer: [
+          new TerserPlugin({
+            extractComments: true,
+          }),
+        ],
+      };
       return config;
     },
   }
