@@ -6,7 +6,7 @@
     "build": "next build",
     "clean": "rimraf .next",
     "custom": "NODE_ENV=development node --inspect --max-old-space-size=512 --trace-gc src/server.js",
-    "debug": "NODE_OPTIONS='--inspect' next dev",
+    "debug": "ANALYZE=false NODE_OPTIONS='--inspect' next dev",
     "dev": "next",
     "eslint": "npx eslint src --ext .ts,.tsx",
     "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
+    "@next/bundle-analyzer": "^10.0.3",
     "@types/react": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",

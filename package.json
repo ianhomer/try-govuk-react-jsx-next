@@ -27,7 +27,7 @@
     "postinstall": "lerna bootstrap",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "prune:ui-components-react": "rimraf packages/ui-components/package node_modules/{react,react-dom}",
+    "prune:ui-components-react": "rimraf packages/ui-components/package/node_modules/{react,react-dom}",
     "start": "run-p start:govuk-react-jsx-next",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
     "storybook": "npm --prefix packages/ui-components/package run storybook",
