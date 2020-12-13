@@ -31,7 +31,7 @@
     "start": "run-p start:govuk-react-jsx-next",
     "start:govuk-react-jsx-next": "npm --prefix services/govuk-react-jsx-next/ run start",
     "storybook": "npm --prefix packages/ui-components/package run storybook",
-    "test": "lerna run test --stream --no-prefix",
+    "test": "lerna run test --stream",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap --no-ci -- --package-lock-only --no-audit"
   },
   "husky": {
