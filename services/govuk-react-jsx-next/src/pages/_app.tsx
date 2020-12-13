@@ -1,6 +1,6 @@
 import "./index.scss";
 import { AppProps } from "next/app";
-import { Layout } from "@try-govuk-react-jsx-next/ui-components";
+import { Layout } from "../components/layout";
 import withReactRouter from "../utils/with-react-router";
 
 function MyApp({ Component, pageProps }: AppProps) {
