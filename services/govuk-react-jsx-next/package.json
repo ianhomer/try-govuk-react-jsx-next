@@ -6,7 +6,7 @@
     "build": "next build",
     "clean": "rimraf .next",
     "custom": "NODE_ENV=development node --inspect --max-old-space-size=512 --trace-gc src/server.js",
-    "debug": "ANALYZE=false NODE_OPTIONS='--inspect' next dev",
+    "debug": "ANALYZE=true NODE_OPTIONS='--inspect' next dev",
     "dev": "next",
     "eslint": "npx eslint src --ext .ts,.tsx",
     "eslint:debug": "DEBUG=eslint:cli-engine npx eslint src --ext .ts,.tsx",
