@@ -31,6 +31,7 @@ module.exports = withPlugins(
       config.resolve.alias["govuk-react-jsx"] = require.resolve(
         "govuk-react-jsx"
       );
+      config.optimization.minimize = true;
       return config;
     },
   }

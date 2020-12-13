@@ -28,6 +28,7 @@ import {
   Textarea,
   WarningText,
 } from "govuk-react-jsx";
+import { Bar, Hook } from "@try-govuk-react-jsx-next/ui-components";
 
 export default function Thing() {
   const router = useRouter();
@@ -36,6 +37,8 @@ export default function Thing() {
   return (
     <>
       <Hint>thing {tid}</Hint>
+      <Bar />
+      <Hook />
       <Accordion
         className="myClass"
         data-attribute="value"
