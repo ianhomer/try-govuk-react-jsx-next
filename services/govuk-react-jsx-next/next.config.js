@@ -39,14 +39,14 @@ module.exports = withPlugins(
       );
 
       // Optimize the source files in bundle
-      config.optimization = {
-        minimize: true,
-        //minimizer: [
-        //  new TerserPlugin({
-        //    extractComments: true,
-        //  }),
-        //],
-      };
+      //config.optimization = {
+      //minimize: true,
+      //minimizer: [
+      //  new TerserPlugin({
+      //    extractComments: true,
+      //  }),
+      //],
+      //};
       // Analyze bundles
       //if (process.env.ANALYZE_DIRECT === 'true') {
       //  config.plugins.push(
