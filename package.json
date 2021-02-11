@@ -24,7 +24,6 @@
     "format:pkg": "format-package -w",
     "lint": "run-s eslint",
     "lint:fix": "run-s eslint:fix prettier:fix format:pkg",
-    "postinstall": "lerna bootstrap",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "prune:ui-components-react": "rimraf packages/ui-components/package node_modules/{react,react-dom}",
@@ -66,5 +65,8 @@
     "rimraf": "^3.0.2",
     "start-server-and-test": "^1.11.6",
     "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=12.0.0 <15"
   }
 }
