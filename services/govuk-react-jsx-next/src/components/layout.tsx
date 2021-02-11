@@ -12,10 +12,14 @@ const headerProps = {
       children: "Kitchen Sink",
       to: "/kitchen-sink",
     },
+    {
+      children: "Thing",
+      to: "/thing/1",
+    },
   ],
 };
 
-export default function Layout({ children }: any): JSX.Element {
+function Layout({ children }: any): JSX.Element {
   return (
     <Template header={headerProps}>
       <Helmet>
@@ -25,3 +29,5 @@ export default function Layout({ children }: any): JSX.Element {
     </Template>
   );
 }
+
+export { Layout };
