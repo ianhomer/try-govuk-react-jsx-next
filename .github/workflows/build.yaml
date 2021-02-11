@@ -8,7 +8,6 @@ on:
     types:
       - completed
 
-        npm run build:storybook
 jobs:
   build:
     runs-on: ubuntu-latest
