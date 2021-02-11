@@ -1,5 +1,3 @@
-//const path = require("path");
-//const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const withPlugins = require("next-compose-plugins");
 const withImages = require("next-images");
 const withTranspileModules = require("next-transpile-modules")([
