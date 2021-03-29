@@ -12,13 +12,13 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.10",
-    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/plugin-transform-typescript": "^7.13.0",
     "@babel/runtime": "^7.13.10",
