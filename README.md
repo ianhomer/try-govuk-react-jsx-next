@@ -8,6 +8,7 @@ Deployed to <https://try-govuk-react-jsx-next.vercel.app>
 ## tl;dr
 
     npm install
+    npm run bootstrap
     npm run dev
 
 And access page

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "ISC",
   "engines": {
-    "node": ">=12.0.0 <17"
+    "node": ">=12.0.0 <15"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -27,7 +27,6 @@
     "lint": "run-s prettier eslint",
     "lint:fix": "run-s package:fix prettier:fix eslint:fix prettier:fix",
     "package:fix": "format-package -w",
-    "postinstall": "lerna bootstrap",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "prune:ui-components-react": "rimraf packages/ui-components/package/node_modules/{react,react-dom}",
