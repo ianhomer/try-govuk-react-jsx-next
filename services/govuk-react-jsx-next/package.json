@@ -24,7 +24,7 @@
     "express": "^4.17.1",
     "govuk-frontend": "^3.12.0",
     "govuk-react-jsx": "^5.1.0",
-    "next": "10.1.3",
+    "next": "^10.2.0",
     "node-sass": "4.14.1",
     "null-loader": "^4.0.1",
     "react": "17.0.2",
