@@ -29,12 +29,10 @@ jobs:
           npm run build:storybook
         run: |
           npm install
-          npm run bootstrap
           npm run lint
           npm test
           npm run e2e:dev:smoke
           npm test
-          npm run bootstrap
           npm run build:ui-components
           npm test
           npm run build:storybook
