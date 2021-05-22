@@ -27,6 +27,7 @@
     "lint": "run-s prettier eslint",
     "lint:fix": "run-s package:fix prettier:fix eslint:fix prettier:fix",
     "package:fix": "format-package -w",
+    "postinstall": "lerna bootstrap",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "prune:ui-components-react": "rimraf packages/ui-components/package/node_modules/{react,react-dom}",
