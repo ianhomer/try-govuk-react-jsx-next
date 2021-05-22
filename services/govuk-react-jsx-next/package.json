@@ -44,6 +44,6 @@
     "inspectpack": "^4.7.1",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.7.0",
-    "next-transpile-modules": "6.4.0"
+    "next-transpile-modules": "^7.2.0"
   }
 }

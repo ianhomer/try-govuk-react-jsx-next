@@ -4,7 +4,9 @@ const withTranspileModules = require("next-transpile-modules")([
   "@try-govuk-react-jsx-next/ui-components",
   "govuk-frontend",
   "govuk-react-jsx",
-]);
+], {
+  resolveSymlinks: false,
+});
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
